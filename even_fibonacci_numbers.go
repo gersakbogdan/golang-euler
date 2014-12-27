@@ -9,7 +9,7 @@ func fib_even_numbers(max int) int {
 	a, b, sum := 1, 2, 2
 
 	for {
-		a, b = a + b + b, a + a + b + b + b
+		a, b = a+2*b, 2*a+3*b
 
 		if b >= max {
 			return sum
